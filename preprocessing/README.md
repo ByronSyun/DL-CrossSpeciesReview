@@ -4,7 +4,7 @@ This directory contains species-specific preprocessing scripts to generate bench
 
 ## Species-Specific Preprocessing
 
-### Human (SpliceVarDB)
+### Human Data1 (SpliceVarDB)
 **Location**: `human/`
 
 **Required input**:
@@ -16,6 +16,23 @@ This directory contains species-specific preprocessing scripts to generate bench
   - Source: https://splicevardb.org/
 
 **Output**: 23,877 SNVs (12,602 splice-altering, 11,275 normal)
+
+---
+
+### Human Data2 (GTEx DAP-G)
+**Location**: `human/`
+
+**Required input**:
+- Reference FASTA: Ensembl r110 (GRCh38 primary assembly)
+  - Source: https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/
+- GTF Annotation: GENCODE v38
+  - Source: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_38/
+- sQTL Data: GTEx DAP-G fine-mapping (GRCh38)
+  - Source: https://zenodo.org/records/3517189
+- Background VCF: 1000 Genomes GRCh38 high-confidence SNP VCF
+  - Source: https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/1000G_phase1.snps.high_confidence.hg38.vcf.gz
+
+**Output**: 22,948 SNVs (11,474 splice-altering, 11,474 normal)
 
 ---
 
@@ -67,4 +84,3 @@ This directory contains species-specific preprocessing scripts to generate bench
   - Source: https://ftp.ensembl.org/pub/release-102/variation/vcf/gallus_gallus/
 
 **Output**: 25,000 SNVs (12,500 splice-altering, 12,500 normal)
-
